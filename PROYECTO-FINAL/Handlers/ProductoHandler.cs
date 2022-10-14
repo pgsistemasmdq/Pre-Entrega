@@ -25,9 +25,7 @@ namespace PROYECTO_FINAL.Handlers
                 conn.Open();
                 DataTable tabla = new DataTable();
                 adapter.Fill(tabla);
-                //for (int i = 0 ; i < tabla.Rows.Count;i++)
-                //    //DataRow dr = tabla.Rows[i];
-
+ 
                 foreach (DataRow dr in tabla.Rows)
                 {
                     Producto producto = new Producto();
